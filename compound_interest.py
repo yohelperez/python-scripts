@@ -1,7 +1,7 @@
 # Datos iniciales
 monto_inicial = 1000000  # COP
 tasa_anual = 0.13  # 13% EA
-dias = 14
+dias = 3
 
 # Cálculo de tasa diaria
 tasa_diaria = tasa_anual / 365
