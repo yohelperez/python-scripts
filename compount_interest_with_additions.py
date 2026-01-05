@@ -1,7 +1,7 @@
-aporte_mensual = 2000000       # tu aporte mensual
+aporte_mensual = 1500000        # tu aporte mensual
 capital_inicial = 0
 tasa_efectiva_anual = 0.15     # 10% EA, historial del S&P500 / VOO
-tiempo_anios = 5
+tiempo_anios = 10
 
 # Total invertido (suma de aportes)
 total_invertido = aporte_mensual * 12 * tiempo_anios + capital_inicial
@@ -19,6 +19,9 @@ valor_futuro += aporte_mensual * (((1 + tasa_mensual)**(12 * tiempo_anios) - 1) 
 ganancia_neta = valor_futuro - total_invertido
 rentabilidad = (ganancia_neta / total_invertido) * 100
 
+print(f"Aporte mensual: ${aporte_mensual:,.2f} COP")
+print(f"Tasa efectiva anual: {tasa_efectiva_anual:.2f}%")
+print(f"Tiempo en años: {tiempo_anios}")
 print(f"\nValor futuro: ${valor_futuro:,.2f} COP")
 print(f"Total invertido: ${total_invertido:,.2f} COP")
 print(f"Ganancia neta: ${ganancia_neta:,.2f} COP")
